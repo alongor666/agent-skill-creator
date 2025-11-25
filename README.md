@@ -49,6 +49,70 @@ and create reports. This takes 2 hours."
 
 ---
 
+## 🎨 **Architecture Diagrams & Visualizations**
+
+**Explore interactive Mermaid diagrams** that visualize the complete system architecture, learning loops, and performance metrics.
+
+### **📊 Available Visualizations**
+
+| Diagram | Description | Key Insights |
+|---------|-------------|--------------|
+| **[Learning Loop](docs/diagrams/learning-loop.md)** | AgentDB learning cycle | How system gets smarter with each use |
+| **[Activation System](docs/diagrams/activation-system.md)** | 4-layer 99.5% reliability | Context-aware skill activation |
+| **[Pipeline Architecture](docs/diagrams/pipeline-architecture.md)** | End-to-end workflows | Research, BI, E-commerce pipelines |
+| **[Performance Metrics](docs/diagrams/performance-metrics.md)** | ROI & time savings | 96%+ time saved, 1000%+ ROI |
+| **[Multi-Intent Detection](docs/diagrams/multi-intent-detection.md)** | Complex query handling | 95% accuracy for multi-goal queries |
+| **[System Integration](docs/diagrams/system-integration.md)** | Technical architecture | Complete system components |
+
+**[📁 View All Diagrams →](docs/diagrams/README.md)**
+
+### **🔍 Quick Previews**
+
+#### Learning Loop Architecture
+```mermaid
+graph TB
+    A[User Request] --> B[Agent Creator]
+    B --> C[Uses /references + AgentDB]
+    C --> D[Skill Created]
+    D --> E[(Store in AgentDB)]
+    E --> F[Future Requests Enhanced]
+    F --> B
+
+    style A fill:#e1f5ff
+    style D fill:#d4edda
+    style E fill:#fff3cd
+    style B fill:#f8d7da
+```
+
+#### 4-Layer Activation System (99.5% Reliability)
+```mermaid
+graph LR
+    Query[User Query] --> L1[Layer 1:<br/>Keywords<br/>50-80]
+    L1 --> L2[Layer 2:<br/>Patterns<br/>10-15]
+    L2 --> L3[Layer 3:<br/>NLU<br/>60+]
+    L3 --> L4[Layer 4:<br/>Context<br/>85%]
+    L4 --> Result[✅ 99.5%<br/>Reliable]
+
+    style L1 fill:#4CAF50
+    style L2 fill:#2196F3
+    style L3 fill:#FF9800
+    style L4 fill:#9C27B0
+    style Result fill:#4CAF50
+```
+
+#### Performance Impact
+```mermaid
+graph LR
+    Before[Manual Work<br/>2 hours/day] --> After[Automated<br/>5 min/day]
+    After --> Savings[⚡ 96% Time Saved<br/>💰 $4,200/month]
+
+    style Before fill:#ffcdd2
+    style After fill:#c8e6c9
+    style Savings fill:#4caf50
+```
+
+---
+
 ## 📊 **Real-World Impact: Proven Results**
 
 ### **📈 Performance Metrics**
@@ -1665,6 +1729,7 @@ Agent Creator v3.1 now supports complex user queries with multiple intentions:
 - **[CHANGELOG.md](docs/CHANGELOG.md)** - Version history and updates
 - **[AGENTDB_ANALYSIS.md](./AGENTDB_ANALYSIS.md)** - Deep dive into AgentDB integration
 - **[templates/](./templates/)** - Template-specific guides
+- **[Architecture Diagrams](docs/diagrams/README.md)** - Interactive Mermaid visualizations (NEW ✨)
 
 ### **🎓 Learning Path**
 
